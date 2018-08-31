@@ -2,4 +2,4 @@
 
 To use:
 
-$ docker pull ibeanu/jenkins-python-slave
+$ docker pull ibeanu/jenkins_python_slave
