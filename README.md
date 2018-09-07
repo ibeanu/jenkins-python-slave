@@ -2,4 +2,4 @@
 
 To use:
 
-$ docker pull jchao100/jenkins-python-slave
+$ docker pull ibeanu/jenkins-python-slave
