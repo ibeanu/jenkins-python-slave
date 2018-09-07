@@ -20,6 +20,9 @@ RUN yum -y groupinstall "Development Tools" && \
 RUN rm -rf /usr/bin/sqlite3 && \
     mv /var/lib/origin/sqlite-autoconf-3240000/sqlite3 /usr/bin/
 
+RUN /bin/cp -rf /var/lib/origin/sqlite-autoconf-3240000/.libs/ /usr/lib/ && \
+     /bin/cp -rf /var/lib/origin/sqlite-autoconf-3240000/.libs/* /usr/lib64/
+
 
 RUN python3.6 --version && sqlite3 --version
 
